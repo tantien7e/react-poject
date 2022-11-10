@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body-container{
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 5px;
+    background-image: url('./images/logo512.png');
+    background-repeat: no-repeat;
+    background-position: 200% 50%;
+}
+
+.body-content {
+    flex: 1;
+    padding: 10px 60px;
+    font-size: 20px;
+    
+}
+
+.body-title > h1{
+    margin: 20px;
+    font-size: 40px;
+}
+
+.fact-items {
+    padding: 10px 10px;
+}
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(0, 204, 255); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    
+  }
